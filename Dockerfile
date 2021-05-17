@@ -11,4 +11,4 @@ RUN apk update && \
     make && \
     make install && \
     cd .. && \
-    rm -rf samtools-1.12
+    rm -rf bcftools-1.12
