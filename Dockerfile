@@ -6,6 +6,7 @@ MAINTAINER Niema Moshiri <niemamoshiri@gmail.com>
 RUN apk update && \
     apk add bash bzip2-dev g++ make xz-dev zlib-dev && \
     wget -O /usr/local/bin/low_depth_regions.py "https://raw.githubusercontent.com/niemasd/tools/master/low_depth_regions.py" && \
+    chmod a+x /usr/local/bin/low_depth_regions.py && \
     wget -qO- "https://github.com/samtools/htslib/releases/download/1.12/htslib-1.12.tar.bz2" | tar -xj && \
     cd htslib-1.12 && \
     ./configure && \
