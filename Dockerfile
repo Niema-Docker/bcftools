@@ -1,5 +1,5 @@
 # Minimal Docker image for bcftools v1.12 + alt_vars 1.0 using Alpine base
-FROM alpine:latest
+FROM alpine:3.13.5
 MAINTAINER Niema Moshiri <niemamoshiri@gmail.com>
 
 # install bcftools
