@@ -1,6 +1,5 @@
 # Minimal Docker image for bcftools using Alpine base
 FROM alpine:3.13.5
-MAINTAINER Niema Moshiri <niemamoshiri@gmail.com>
 
 # install bcftools
 RUN apk update && \
