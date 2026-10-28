@@ -7,13 +7,11 @@ RUN apk update && \
     wget -qO- "https://github.com/samtools/htslib/releases/download/1.25/htslib-1.25.tar.bz2" | tar -xj && \
     cd htslib-* && \
     ./configure && \
-    make && \
     make install && \
     cd .. && \
     wget -qO- "https://github.com/samtools/bcftools/releases/download/1.25/bcftools-1.25.tar.bz2" | tar -xj && \
     cd bcftools-* && \
     ./configure --without-curses && \
-    make && \
     make install && \
     cd .. && \
     rm -rf bcftools-* htslib-*
